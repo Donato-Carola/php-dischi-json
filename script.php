@@ -2,7 +2,41 @@
 
 
 
-$albums = [
+
+
+
+
+
+$stringList = file_get_contents('./json/album.json');
+
+
+header('Content-Type: application/json');
+echo $stringList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$albums = [
     [
         "image" => "./img/ACDC.jpg",
         "title" => "Highway to Hell",
@@ -39,8 +73,4 @@ $albums = [
         "artist" => "Vasco Rossi",
         "year" => 1985
     ]
-];
-
-
-header('Content-Type: application/json');
-echo json_encode($albums);
+];*/
