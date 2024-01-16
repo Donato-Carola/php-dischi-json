@@ -31,7 +31,7 @@ echo $stringList;
 
 
 
-
+/*se invece volessimo non richimarlo da json e lavorare su questo file basta eliminare il file json e decommentare i dati qui sotto */ 
 
 
 
