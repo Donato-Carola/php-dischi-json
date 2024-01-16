@@ -22,3 +22,7 @@ main div.card{
 background-color: rgba(0, 0, 0, 0);
 color: white;
 }
+
+main div.card>img{
+    height: 100%;
+}
