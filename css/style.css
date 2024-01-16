@@ -13,8 +13,12 @@ header>img{
     text-align: center;
 }
 
+
 main{
-    width: 100%;
-    height: calc(100vh - 50px) ;
-    overflow: auto;
+    background-color: rgb(29, 45, 60);
+}
+
+main div.card{
+background-color: rgba(0, 0, 0, 0);
+color: white;
 }
