@@ -26,3 +26,36 @@ color: white;
 main div.card>img{
     height: 100%;
 }
+
+.album-container {
+    transition: all 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+    cursor: pointer;
+  }
+
+  .album-container.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: white;
+    z-index: 9999;
+  }
+
+  .fullscreen-album {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Sfondo trasparente */
+    z-index: 1000; /* Assicura che l'album a schermo intero sia sopra gli altri elementi */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreen-album .card {
+    max-width: 500px; /* Regola la larghezza massima della card a schermo intero */
+  }

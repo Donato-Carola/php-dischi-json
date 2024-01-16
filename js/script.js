@@ -6,6 +6,7 @@
       return {
         url:'./script.php',
         albums:[],
+        fullscreenAlbum: null,
       }
     },
        
@@ -19,11 +20,25 @@
         .catch(error => {
           console.error('Errore durante la richiesta API', error);
         });
-      }
+      },
+
+      toggleFullscreen(album) {
+        if (this.fullscreenAlbum === null) {
+          // Se non c'è ancora un album a schermo intero, copialo
+          this.fullscreenAlbum = { ...album };
+        } else {
+          // Se l'album è già a schermo intero, rimuovilo
+          this.fullscreenAlbum = null;
+        }
+      },
+
     },
+
+
 
     mounted() {
       this.albumsGet();
+      
     },
 
 
