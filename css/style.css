@@ -15,6 +15,6 @@ header>img{
 
 main{
     width: 100%;
-    height: 100vh;
-    overflow-y: auto;
+    height: calc(100vh - 50px) ;
+    overflow: auto;
 }
